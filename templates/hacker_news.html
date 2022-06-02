@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	<noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+    <title>hacker_news</title>
+</head>
+<body>
+{% for answer in answers: %}
+<!--<h1>{{answer["urlimage"]}}</h1>-->
+<h1>{{answer["title"]}}</h1>
+<a href={{answer['url']}}>{{answer['url']}}</a>
+<h1>-------------------------------------------------------------------------</h1>
+{%endfor%}
+<ul class="actions stacked">
+								<li><a href="/" class="button">Back</a></li>
+							</ul>
+
+
+</body>
+</html>

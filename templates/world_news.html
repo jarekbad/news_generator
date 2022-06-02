@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	<noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+    <title>world_news_input</title>
+</head>
+<body>
+<form method="POST">
+    <label>Enter the word you are looking for:</label>
+    <input name="variable">
+    <input type="submit">
+</form>
+</body>
+</html>
